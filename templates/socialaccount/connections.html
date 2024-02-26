@@ -5,6 +5,7 @@
     {% trans "Account Connections" %}
 {% endblock head_title %}
 {% block content %}
+<div class="content-center">
     {% element h1 %}
         {% trans "Account Connections" %}
     {% endelement %}
@@ -49,4 +50,5 @@
     {% endelement %}
     {% include "socialaccount/snippets/provider_list.html" with process="connect" %}
     {% include "socialaccount/snippets/login_extra.html" %}
+    </div>
 {% endblock content %}
